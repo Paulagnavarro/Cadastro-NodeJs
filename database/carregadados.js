@@ -5,7 +5,7 @@ const usuarios = require("./usuarios.json");
 
 async function carregarDados() {
     try {
-        await Usuario.deleteMany({});
+     
         for (const usuario of usuarios) {
             await Usuario.create(usuario);
         }
