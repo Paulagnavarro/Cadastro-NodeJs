@@ -9,7 +9,9 @@ const UsuarioSchema = new mongoose.Schema({
     endereco: String,
     cidade: String,
     estado: String,
-    status: Boolean
+    status: Boolean,
+    foto: {type:String, require: true},
+    src: {type: String, required: true}
 });
 
 module.exports = mongoose.model('usuarios', UsuarioSchema);

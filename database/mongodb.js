@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+//const URL = 'mongodb://0.0.0.0:27017/Cadastro';
 const URL = 'mongodb://localhost:27017/Cadastro';
 const db = mongoose.connect(URL);
 const con = mongoose.connection;
